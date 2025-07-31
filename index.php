@@ -9,19 +9,26 @@ include 'includes/header.php';
         <div class="absolute inset-0 slider-container">
             <!-- Slide 1 -->
             <div class="slide active absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-1000" 
-                 style="background-image: url('https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');">
+                 style="background-image: url('images/WhatsApp Image 2025-07-31 at 11.03.59 AM (2).jpeg');">
                 <div class="absolute inset-0 bg-black opacity-50"></div>
             </div>
             
             <!-- Slide 2 -->
             <div class="slide absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-1000 opacity-0" 
-                 style="background-image: url('https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');">
+                 style="background-image: url('images/WhatsApp Image 2025-07-31 at 11.03.59 AM (1).jpeg');">
                 <div class="absolute inset-0 bg-black opacity-50"></div>
             </div>
             
-            <!-- Slide 3 -->
+        
+            <!-- Slide 4 -->
             <div class="slide absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-1000 opacity-0" 
-                 style="background-image: url('https://images.unsplash.com/photo-1594736797933-d0401ba2fe65?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');">
+                 style="background-image: url('images/WhatsApp Image 2025-07-31 at 11.04.00 AM.jpeg');">
+                <div class="absolute inset-0 bg-black opacity-50"></div>
+            </div>
+            
+            <!-- Slide 5 -->
+            <div class="slide absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-1000 opacity-0" 
+                 style="background-image: url('images/WhatsApp Image 2025-07-31 at 11.04.00 AM (1).jpeg');">
                 <div class="absolute inset-0 bg-black opacity-50"></div>
             </div>
         </div>
@@ -30,7 +37,7 @@ include 'includes/header.php';
         <div class="relative z-10 flex items-center justify-center h-full">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
                 <h1 class="text-4xl md:text-6xl font-bold mb-6 animate-fade-in">Empowering Communities, Transforming Lives</h1>
-                <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto animate-slide-up">NALEPO means "spring" in Maasai—symbolizing life, abundance, and sustainability for vulnerable communities.</p>
+                <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto animate-slide-up">NALEPO means \"spring\" in Maasai—symbolizing life, abundance, and sustainability for vulnerable communities.</p>
                 <div class="space-x-4 animate-slide-up">
                     <a href="/get-involved" class="bg-savanna-green hover:bg-green-700 text-white font-bold py-3 px-8 rounded-lg transition duration-300 transform hover:scale-105">Donate Now</a>
                     <a href="/about" class="bg-transparent border-2 border-white hover:bg-white hover:text-maasai-red text-white font-bold py-3 px-8 rounded-lg transition duration-300 transform hover:scale-105">Learn More</a>
@@ -44,6 +51,8 @@ include 'includes/header.php';
                 <button class="slider-dot active w-3 h-3 rounded-full bg-white opacity-75 hover:opacity-100 transition-opacity duration-300" data-slide="0"></button>
                 <button class="slider-dot w-3 h-3 rounded-full bg-white opacity-50 hover:opacity-100 transition-opacity duration-300" data-slide="1"></button>
                 <button class="slider-dot w-3 h-3 rounded-full bg-white opacity-50 hover:opacity-100 transition-opacity duration-300" data-slide="2"></button>
+                <button class="slider-dot w-3 h-3 rounded-full bg-white opacity-50 hover:opacity-100 transition-opacity duration-300" data-slide="3"></button>
+                <button class="slider-dot w-3 h-3 rounded-full bg-white opacity-50 hover:opacity-100 transition-opacity duration-300" data-slide="4"></button>
             </div>
         </div>
         
@@ -94,8 +103,8 @@ include 'includes/header.php';
             showSlide(currentSlide);
         }
         
-        // Auto-advance slides every 5 seconds
-        setInterval(nextSlide, 5000);
+        // Auto-advance slides every 6 seconds (increased for 5 slides)
+        setInterval(nextSlide, 6000);
         
         // Navigation event listeners
         document.getElementById('nextSlide').addEventListener('click', nextSlide);
