@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programs - NALEPO</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'maasai-red': '#B91C1C',
+                        'earth-brown': '#92400E',
+                        'savanna-green': '#059669',
+                        'sunset-orange': '#EA580C',
+                        'warm-beige': '#FEF3C7'
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <h1 class="text-2xl font-bold text-maasai-red">NALEPO</h1>
+                        <p class="text-xs text-gray-600">Natural Spring of Hope</p>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-maasai-red transition">Home</a>
+                    <a href="about.html" class="text-gray-700 hover:text-maasai-red transition">About</a>
+                    <a href="programs.html" class="text-maasai-red font-semibold">Programs</a>
+                    <a href="get-involved.html" class="text-gray-700 hover:text-maasai-red transition">Get Involved</a>
+                    <a href="impact.html" class="text-gray-700 hover:text-maasai-red transition">Impact</a>
+                    <a href="contact.html" class="text-gray-700 hover:text-maasai-red transition">Contact</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="mobile-menu-button">
+                        <i class="fas fa-bars text-gray-700"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div class="mobile-menu hidden md:hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white">
+                <a href="index.html" class="block px-3 py-2 text-gray-700">Home</a>
+                <a href="about.html" class="block px-3 py-2 text-gray-700">About</a>
+                <a href="programs.html" class="block px-3 py-2 text-maasai-red font-semibold">Programs</a>
+                <a href="get-involved.html" class="block px-3 py-2 text-gray-700">Get Involved</a>
+                <a href="impact.html" class="block px-3 py-2 text-gray-700">Impact</a>
+                <a href="contact.html" class="block px-3 py-2 text-gray-700">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-maasai-red to-sunset-orange text-white pt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6">Our Programs</h1>
+                <p class="text-xl md:text-2xl max-w-3xl mx-auto">Comprehensive initiatives designed to empower communities and create lasting change.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs Overview -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Five Core Focus Areas</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Our holistic approach addresses the interconnected challenges facing vulnerable communities through targeted programs.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Program -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="flex items-center mb-6">
+                        <div class="bg-maasai-red text-white rounded-full w-16 h-16 flex items-center justify-center mr-4">
+                            <i class="fas fa-graduation-cap text-2xl"></i>
+                        </div>
+                        <h3 class="text-3xl font-bold text-gray-900">Education</h3>
+                    </div>
+                    <p class="text-lg text-gray-600 mb-6">Education is the foundation of sustainable development. Our education programs ensure that children and adults have access to quality learning opportunities.</p>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-savanna-green mt-1 mr-3"></i>
+                            <span class="text-gray-700"><strong>Scholarships:</strong> Financial support for students from vulnerable families</span>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-savanna-green mt-1 mr-3"></i>
+                            <span class="text-gray-700"><strong>Learning Materials:</strong> Books, supplies, and educational resources</span>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-savanna-green mt-1 mr-3"></i>
+                            <span class="text-gray-700"><strong>Vocational Training:</strong> Skills development for sustainable livelihoods</span>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-savanna-green mt-1 mr-3"></i>
+                            <span class="text-gray-700"><strong>Adult Literacy:</strong> Reading and writing programs for adults</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-warm-beige p-8 rounded-lg">
+                    <h4 class="text-xl font-bold text-gray-900 mb-4">Program Impact</h4>
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-700">Students Supported</span>
+                            <span class="font-bold text-maasai-red">500+</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-700">Scholarships Awarded</span>
+                            <span class="font-bold text-maasai-red">150+</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-700">Vocational Graduates</span>
+                            <span class="font-bold text-maasai-red">75+</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-700">Literacy Rate Increase</span>
+                            <span class="font-bold text-maasai-red">85%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Economic Empowerment Program -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="bg-warm-beige p-8 rounded-lg order-2 lg:order-1">
+                    <h4 class="text-xl font-bold text-gray-900 mb-4">Program Components</h4>
+                    <div class="space-y-4">
+                        <div class="bg-white p-4 rounded">
+                            <h5 class="font-semibold text-gray-900 mb-2">Micro-Finance</h5>
+                            <p class="text-gray-600 text-sm">Small loans to start or expand businesses</p>
+                        </div>
+                        <div class="bg-white p-4 rounded">
+                            <h5 class="font-semibold text-gray-900 mb-2">Business Training</h5>
+                            <p class="text-gray-600 text-sm">Workshops on entrepreneurship and management</p>
+                        </div>
+                        <div class="bg-white p-4 rounded">
+                            <h5 class="font-semibold text-gray-900 mb-2">Cooperatives</h5>
+                            <p class="text-gray-600 text-sm">Formation of community-based business groups</p>
+                        </div>
+                        <div class="bg-white p-4 rounded">
+                            <h5 class="font-semibold text-gray-900 mb-2">Market Access</h5>
+                            <p class="text-gray-600 text-sm">Connecting producers with buyers and markets</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-1 lg:order-2">
+                    <div class="flex items-center mb-6">
+                        <div class="bg-savanna-green text-white rounded-full w-16 h-16 flex items-center justify-center mr-4">
+                            <i class="fas fa-coins text-2xl"></i>
+                        </div>
+                        <h3 class="text-3xl font-bold text-gray-900">Economic Empowerment</h3>
+                    </div>
+                    <p class="text-lg text-gray-600 mb-6">We believe in empowering communities through economic opportunities that create sustainable income sources and reduce dependency.</p>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-savanna-green mt-1 mr-3"></i>
+                            <span class="text-gray-700"><strong>Micro-loans:</strong> Access to capital for small business development</span>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-savanna-green mt-1 mr-3"></i>
+                            <span class="text-gray-700"><strong>Business Workshops:</strong> Training in entrepreneurship and financial management</span>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-savanna-green mt-1 mr-3"></i>
+                            <span class="text-gray-700"><strong>Cooperatives:</strong> Formation of community business groups</span>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-savanna-green mt-1 mr-3"></i>
+                            <span class="text-gray-700"><strong>Market Linkages:</strong> Connecting producers with buyers</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gender Equality Program -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="flex items-center mb-6">
+                        <div class="bg-sunset-orange text-white rounded-full w-16 h-16 flex items-center justify-center mr-4">
+                            <i class="fas fa-venus text-2xl"></i>
+                        </div>
+                        <h3 class="text-3xl font-bold text-gray-900">Gender Equality</h3>
+                    </div>
+                    <p class="text-lg text-gray-600 mb-6">Promoting gender equality and empowering women and girls to participate fully in economic, social, and political life.</p>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-savanna-green mt-1 mr-3"></i>
+                            <span class="text-gray-700"><strong>Women's Empowerment:</strong> Leadership and skills development programs</span>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-savanna-green mt-1 mr-3"></i>
+                            <span class="text-gray-700"><strong>Mentorship:</strong> Connecting women with successful role models</span>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-savanna-green mt-1 mr-3"></i>
+                            <span class="text-gray-700"><strong>Capital Access:</strong> Financial resources for women entrepreneurs</span>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-savanna-green mt-1 mr-3"></i>
+                            <span class="text-gray-700"><strong>Rights Education:</strong> Awareness of women's rights and opportunities</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-sunset-orange text-white p-8 rounded-lg">
+                    <h4 class="text-xl font-bold mb-4">Success Stories</h4>
+                    <div class="space-y-4">
+                        <div class="bg-white bg-opacity-20 p-4 rounded">
+                            <p class="text-sm mb-2">"Through NALEPO's support, I started my own tailoring business and now employ 5 other women in my community."</p>
+                            <p class="text-xs font-semibold">- Mary, Entrepreneur</p>
+                        </div>
+                        <div class="bg-white bg-opacity-20 p-4 rounded">
+                            <p class="text-sm mb-2">"The mentorship program helped me become a community leader and advocate for women's rights."</p>
+                            <p class="text-xs font-semibold">- Grace, Community Leader</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Environmental Conservation Program -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="bg-green-100 p-8 rounded-lg order-2 lg:order-1">
+                    <h4 class="text-xl font-bold text-gray-900 mb-4">Environmental Impact</h4>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="text-center">
+                            <div class="text-2xl font-bold text-green-600">1,000+</div>
+                            <p class="text-sm text-gray-600">Trees Planted</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-2xl font-bold text-green-600">50+</div>
+                            <p class="text-sm text-gray-600">Farmers Trained</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-2xl font-bold text-green-600">25</div>
+                            <p class="text-sm text-gray-600">Conservation Projects</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-2xl font-bold text-green-600">30%</div>
+                            <p class="text-sm text-gray-600">Yield Increase</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-1 lg:order-2">
+                    <div class="flex items-center mb-6">
+                        <div class="bg-green-600 text-white rounded-full w-16 h-16 flex items-center justify-center mr-4">
+                            <i class="fas fa-leaf text-2xl"></i>
+                        </div>
+                        <h3 class="text-3xl font-bold text-gray-900">Environmental Conservation</h3>
+                    </div>
+                    <p class="text-lg text-gray-600 mb-6">Protecting and restoring the environment while promoting sustainable practices that benefit both communities and nature.</p>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-savanna-green mt-1 mr-3"></i>
+                            <span class="text-gray-700"><strong>Tree Planting:</strong> Reforestation and afforestation initiatives</span>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-savanna-green mt-1 mr-3"></i>
+                            <span class="text-gray-700"><strong>Sustainable Farming:</strong> Eco-friendly agricultural practices</span>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-savanna-green mt-1 mr-3"></i>
+                            <span class="text-gray-700"><strong>Conservation Projects:</strong> Protecting natural resources and wildlife</span>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-savanna-green mt-1 mr-3"></i>
+                            <span class="text-gray-700"><strong>Climate Education:</strong> Awareness about climate change impacts</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Well-being Program -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="flex items-center mb-6">
+                        <div class="bg-earth-brown text-white rounded-full w-16 h-16 flex items-center justify-center mr-4">
+                            <i class="fas fa-heart text-2xl"></i>
+                        </div>
+                        <h3 class="text-3xl font-bold text-gray-900">Social Well-being</h3>
+                    </div>
+                    <p class="text-lg text-gray-600 mb-6">Supporting the mental, emotional, and social health of community members through comprehensive wellness programs.</p>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-savanna-green mt-1 mr-3"></i>
+                            <span class="text-gray-700"><strong>Mental Health Education:</strong> Awareness and destigmatization programs</span>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-savanna-green mt-1 mr-3"></i>
+                            <span class="text-gray-700"><strong>Counseling Services:</strong> Professional support for individuals and families</span>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-savanna-green mt-1 mr-3"></i>
+                            <span class="text-gray-700"><strong>Addiction Recovery:</strong> Support programs for substance abuse</span>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-savanna-green mt-1 mr-3"></i>
+                            <span class="text-gray-700"><strong>Community Support:</strong> Building strong social networks</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-earth-brown text-white p-8 rounded-lg">
+                    <h4 class="text-xl font-bold mb-4">Program Services</h4>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-brain mr-3"></i>
+                            <span>Mental Health Workshops</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-comments mr-3"></i>
+                            <span>Individual Counseling</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-users mr-3"></i>
+                            <span>Group Therapy Sessions</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-hands-helping mr-3"></i>
+                            <span>Peer Support Groups</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-home mr-3"></i>
+                            <span>Family Counseling</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-shield-alt mr-3"></i>
+                            <span>Crisis Intervention</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-maasai-red text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Support Our Programs</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Your contribution can help us expand these vital programs and reach more communities in need.</p>
+            <a href="get-involved.html" class="bg-white text-maasai-red hover:bg-gray-100 font-bold py-3 px-8 rounded-lg transition duration-300">Get Involved</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="col-span-1 md:col-span-2">
+                    <h3 class="text-2xl font-bold mb-4">NALEPO</h3>
+                    <p class="text-gray-300 mb-4">Natural Livelihood Empowerment and Progress Organization - Empowering communities, transforming lives through sustainable development.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-300 hover:text-white">About Us</a></li>
+                        <li><a href="programs.html" class="text-gray-300 hover:text-white">Programs</a></li>
+                        <li><a href="impact.html" class="text-gray-300 hover:text-white">Impact</a></li>
+                        <li><a href="contact.html" class="text-gray-300 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact Info</h4>
+                    <div class="space-y-2 text-gray-300">
+                        <p><i class="fas fa-envelope mr-2"></i>nalepo.org@gmail.com</p>
+                        <p><i class="fas fa-phone mr-2"></i>+255 682 398 053</p>
+                        <p><i class="fas fa-globe mr-2"></i>nalepoorga.com</p>
+                        <p><i class="fas fa-user mr-2"></i>Emanuel Punuka

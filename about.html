@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - NALEPO</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'maasai-red': '#B91C1C',
+                        'earth-brown': '#92400E',
+                        'savanna-green': '#059669',
+                        'sunset-orange': '#EA580C',
+                        'warm-beige': '#FEF3C7'
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <h1 class="text-2xl font-bold text-maasai-red">NALEPO</h1>
+                        <p class="text-xs text-gray-600">Natural Spring of Hope</p>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-maasai-red transition">Home</a>
+                    <a href="about.html" class="text-maasai-red font-semibold">About</a>
+                    <a href="programs.html" class="text-gray-700 hover:text-maasai-red transition">Programs</a>
+                    <a href="get-involved.html" class="text-gray-700 hover:text-maasai-red transition">Get Involved</a>
+                    <a href="impact.html" class="text-gray-700 hover:text-maasai-red transition">Impact</a>
+                    <a href="contact.html" class="text-gray-700 hover:text-maasai-red transition">Contact</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="mobile-menu-button">
+                        <i class="fas fa-bars text-gray-700"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div class="mobile-menu hidden md:hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white">
+                <a href="index.html" class="block px-3 py-2 text-gray-700">Home</a>
+                <a href="about.html" class="block px-3 py-2 text-maasai-red font-semibold">About</a>
+                <a href="programs.html" class="block px-3 py-2 text-gray-700">Programs</a>
+                <a href="get-involved.html" class="block px-3 py-2 text-gray-700">Get Involved</a>
+                <a href="impact.html" class="block px-3 py-2 text-gray-700">Impact</a>
+                <a href="contact.html" class="block px-3 py-2 text-gray-700">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-maasai-red to-sunset-orange text-white pt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6">About NALEPO</h1>
+                <p class="text-xl md:text-2xl max-w-3xl mx-auto">Discover our story, mission, and vision for empowering communities across East Africa.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Content -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Our Story</h2>
+                    <p class="text-lg text-gray-600 mb-6">NALEPO, meaning "spring" in Maasai, symbolizes life, abundance, and sustainability. We were founded with a vision to support the Maasai and other vulnerable communities through comprehensive development programs.</p>
+                    <p class="text-lg text-gray-600 mb-6">Our organization emerged from the recognition that sustainable development requires a holistic approach—one that addresses education, economic empowerment, gender equality, environmental conservation, and social well-being simultaneously.</p>
+                    <p class="text-lg text-gray-600">Like a natural spring that provides life-giving water to all who need it, NALEPO serves as a source of hope, opportunity, and transformation for communities across East Africa.</p>
+                </div>
+                <div class="bg-warm-beige p-8 rounded-lg">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">What NALEPO Means</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <div class="bg-maasai-red text-white rounded-full w-8 h-8 flex items-center justify-center mr-4">
+                                <i class="fas fa-tint"></i>
+                            </div>
+                            <span class="text-gray-700"><strong>Spring:</strong> Source of life and renewal</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="bg-savanna-green text-white rounded-full w-8 h-8 flex items-center justify-center mr-4">
+                                <i class="fas fa-seedling"></i>
+                            </div>
+                            <span class="text-gray-700"><strong>Abundance:</strong> Prosperity for all</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="bg-sunset-orange text-white rounded-full w-8 h-8 flex items-center justify-center mr-4">
+                                <i class="fas fa-recycle"></i>
+                            </div>
+                            <span class="text-gray-700"><strong>Sustainability:</strong> Long-term impact</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission & Vision -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <div class="text-center mb-6">
+                        <div class="bg-maasai-red text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-bullseye text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900">Our Mission</h3>
+                    </div>
+                    <p class="text-gray-600 text-center">To empower vulnerable populations by providing education, economic opportunities, environmental stewardship, and gender equality initiatives that create sustainable, thriving communities.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <div class="text-center mb-6">
+                        <div class="bg-savanna-green text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-eye text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900">Our Vision</h3>
+                    </div>
+                    <p class="text-gray-600 text-center">A world where every community has access to the resources, knowledge, and opportunities needed to achieve sustainable development and prosperity while preserving their cultural heritage.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Values</h2>
+                <p class="text-xl text-gray-600">The principles that guide everything we do</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="bg-maasai-red text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-hands-helping text-2xl"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-gray-900 mb-2">Community-Centered</h4>
+                    <p class="text-gray-600">We prioritize community needs and local leadership in all our initiatives.</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-savanna-green text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-leaf text-2xl"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-gray-900 mb-2">Sustainable</h4>
+                    <p class="text-gray-600">We focus on long-term solutions that protect the environment and future generations.</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-sunset-orange text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-balance-scale text-2xl"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-gray-900 mb-2">Inclusive</h4>
+                    <p class="text-gray-600">We ensure equal opportunities for all, regardless of gender, age, or background.</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-earth-brown text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-lightbulb text-2xl"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-gray-900 mb-2">Innovative</h4>
+                    <p class="text-gray-600">We embrace creative solutions and adapt to changing community needs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Leadership</h2>
+            </div>
+            <div class="max-w-md mx-auto">
+                <div class="bg-white rounded-lg shadow-lg p-8 text-center">
+                    <div class="bg-maasai-red text-white rounded-full w-24 h-24 flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-user text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-2">Emanuel Punuka</h3>
+                    <p class="text-lg text-maasai-red mb-4">Chief Executive Officer</p>
+                    <p class="text-gray-600">Leading NALEPO with passion and dedication to community empowerment and sustainable development across East Africa.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="col-span-1 md:col-span-2">
+                    <h3 class="text-2xl font-bold mb-4">NALEPO</h3>
+                    <p class="text-gray-300 mb-4">Natural Livelihood Empowerment and Progress Organization - Empowering communities, transforming lives through sustainable development.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-300 hover:text-white">About Us</a></li>
+                        <li><a href="programs.html" class="text-gray-300 hover:text-white">Programs</a></li>
+                        <li><a href="impact.html" class="text-gray-300 hover:text-white">Impact</a></li>
+                        <li><a href="contact.html" class="text-gray-300 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact Info</h4>
+                    <div class="space-y-2 text-gray-300">
+                        <p><i class="fas fa-envelope mr-2"></i>nalepo.org@gmail.com</p>
+                        <p><i class="fas fa-phone mr-2"></i>+255 682 398 053</p>
+                        <p><i class="fas fa-globe mr-2"></i>nalepoorga.com</p>
+                        <p><i class="fas fa-user mr-2"></i>Emanuel Punuka, CEO</p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p class="text-gray-300">&copy; 2024 NALEPO. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.querySelector('.mobile-menu-button');
+        const mobileMenu = document.querySelector('.mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

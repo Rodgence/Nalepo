@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impact - NALEPO</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'maasai-red': '#B91C1C',
+                        'earth-brown': '#92400E',
+                        'savanna-green': '#059669',
+                        'sunset-orange': '#EA580C',
+                        'warm-beige': '#FEF3C7'
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <h1 class="text-2xl font-bold text-maasai-red">NALEPO</h1>
+                        <p class="text-xs text-gray-600">Natural Spring of Hope</p>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-maasai-red transition">Home</a>
+                    <a href="about.html" class="text-gray-700 hover:text-maasai-red transition">About</a>
+                    <a href="programs.html" class="text-gray-700 hover:text-maasai-red transition">Programs</a>
+                    <a href="get-involved.html" class="text-gray-700 hover:text-maasai-red transition">Get Involved</a>
+                    <a href="impact.html" class="text-maasai-red font-semibold">Impact</a>
+                    <a href="contact.html" class="text-gray-700 hover:text-maasai-red transition">Contact</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="mobile-menu-button">
+                        <i class="fas fa-bars text-gray-700"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div class="mobile-menu hidden md:hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white">
+                <a href="index.html" class="block px-3 py-2 text-gray-700">Home</a>
+                <a href="about.html" class="block px-3 py-2 text-gray-700">About</a>
+                <a href="programs.html" class="block px-3 py-2 text-gray-700">Programs</a>
+                <a href="get-involved.html" class="block px-3 py-2 text-gray-700">Get Involved</a>
+                <a href="impact.html" class="block px-3 py-2 text-maasai-red font-semibold">Impact</a>
+                <a href="contact.html" class="block px-3 py-2 text-gray-700">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-r from-earth-brown to-sunset-orange text-white pt-16">
+        <div class="absolute inset-0 bg-black opacity-30"></div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6">Our Impact</h1>
+                <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">Measuring success through transformed lives and empowered communities.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Statistics -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Impact by Numbers</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Real results from our community-focused programs and initiatives.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center p-6 bg-maasai-red text-white rounded-lg">
+                    <div class="text-4xl md:text-5xl font-bold mb-2">500+</div>
+                    <p class="text-lg">School Children</p>
+                    <p class="text-sm opacity-90">Received educational supplies</p>
+                </div>
+                <div class="text-center p-6 bg-savanna-green text-white rounded-lg">
+                    <div class="text-4xl md:text-5xl font-bold mb-2">20+</div>
+                    <p class="text-lg">Women-Led Businesses</p>
+                    <p class="text-sm opacity-90">Created and supported</p>
+                </div>
+                <div class="text-center p-6 bg-sunset-orange text-white rounded-lg">
+                    <div class="text-4xl md:text-5xl font-bold mb-2">85%</div>
+                    <p class="text-lg">Literacy Rate</p>
+                    <p class="text-sm opacity-90">Community improvement</p>
+                </div>
+                <div class="text-center p-6 bg-earth-brown text-white rounded-lg">
+                    <div class="text-4xl md:text-5xl font-bold mb-2">1,200+</div>
+                    <p class="text-lg">Trees Planted</p>
+                    <p class="text-sm opacity-90">Environmental conservation</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detailed Impact Metrics -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Program Impact Details</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- Education Impact -->
+                <div class="bg-white rounded-lg shadow-lg p-8">
+                    <div class="flex items-center mb-6">
+                        <div class="bg-maasai-red text-white rounded-full w-12 h-12 flex items-center justify-center mr-4">
+                            <i class="fas fa-graduation-cap text-xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900">Education Program</h3>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-600">Students Supported</span>
+                            <span class="font-bold text-maasai-red">500+</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-600">Scholarships Awarded</span>
+                            <span class="font-bold text-maasai-red">75</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-600">Vocational Training Graduates</span>
+                            <span class="font-bold text-maasai-red">120</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-600">Adult Literacy Rate Increase</span>
+                            <span class="font-bold text-maasai-red">85%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Economic Empowerment Impact -->
+                <div class="bg-white rounded-lg shadow-lg p-8">
+                    <div class="flex items-center mb-6">
+                        <div class="bg-savanna-green text-white rounded-full w-12 h-12 flex items-center justify-center mr-4">
+                            <i class="fas fa-coins text-xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900">Economic Empowerment</h3>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-600">Micro-loans Distributed</span>
+                            <span class="font-bold text-savanna-green">$45,000</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-600">Businesses Created</span>
+                            <span class="font-bold text-savanna-green">20+</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-600">Average Income Increase</span>
+                            <span class="font-bold text-savanna-green">65%</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-600">Cooperative Members</span>
+                            <span class="font-bold text-savanna-green">150</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Environmental Impact -->
+                <div class="bg-white rounded-lg shadow-lg p-8">
+                    <div class="flex items-center mb-6">
+                        <div class="bg-green-600 text-white rounded-full w-12 h-12 flex items-center justify-center mr-4">
+                            <i class="fas fa-leaf text-xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900">Environmental Conservation</h3>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-600">Trees Planted</span>
+                            <span class="font-bold text-green-600">1,200+</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-600">Hectares Reforested</span>
+                            <span class="font-bold text-green-600">25</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-600">Sustainable Farms</span>
+                            <span class="font-bold text-green-600">40</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-600">Water Conservation Projects</span>
+                            <span class="font-bold text-green-600">8</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gender Equality Impact -->
+                <div class="bg-white rounded-lg shadow-lg p-8">
+                    <div class="flex items-center mb-6">
+                        <div class="bg-sunset-orange text-white rounded-full w-12 h-12 flex items-center justify-center mr-4">
+                            <i class="fas fa-venus text-xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900">Gender Equality</h3>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-600">Women Empowered</span>
+                            <span class="font-bold text-sunset-orange">200+</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-600">Leadership Training</span>
+                            <span class="font-bold text-sunset-orange">85</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-600">Women-Led Businesses</span>
+                            <span class="font-bold text-sunset-orange">20</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-600">Mentorship Programs</span>
+                            <span class="font-bold text-sunset-orange">12</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Stories -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Success Stories</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Real stories from community members whose lives have been transformed.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <!-- Story 1 -->
+                <div class="bg-gray-50 rounded-lg p-8">
+                    <div class="text-center mb-6">
+                        <div class="w-20 h-20 bg-maasai-red rounded-full mx-auto mb-4 flex items-center justify-center">
+                            <i class="fas fa-user text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900">Nasirian Sankale</h3>
+                        <p class="text-gray-600">Maasai Mother & Entrepreneur</p>
+                    </div>
+                    <blockquote class="text-gray-700 italic mb-4">
+                        "Through NALEPO's micro-loan program, I started a beadwork business. Now I can send all my children to school and support other women in my community. The training gave me confidence to become a leader."
+                    </blockquote>
+                    <div class="text-sm text-gray-500">
+                        <strong>Impact:</strong> Started business, educated 4 children, mentors 10 women
+                    </div>
+                </div>
+
+                <!-- Story 2 -->
+                <div class="bg-gray-50 rounded-lg p-8">
+                    <div class="text-center mb-6">
+                        <div class="w-20 h-20 bg-savanna-green rounded-full mx-auto mb-4 flex items-center justify-center">
+                            <i class="fas fa-user text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900">Joseph Lemayian</h3>
+                        <p class="text-gray-600">Vocational Training Graduate</p>
+                    </div>
+                    <blockquote class="text-gray-700 italic mb-4">
+                        "I learned carpentry skills through NALEPO's vocational program. Today, I run a successful furniture workshop and employ 5 young people from my village. Education changed everything for my family."
+                    </blockquote>
+                    <div class="text-sm text-gray-500">
+                        <strong>Impact:</strong> Established workshop, created 5 jobs, increased income by 300%
+                    </div>
+                </div>
+
+                <!-- Story 3 -->
+                <div class="bg-gray-50 rounded-lg p-8">
+                    <div class="text-center mb-6">
+                        <div class="w-20 h-20 bg-sunset-orange rounded-full mx-auto mb-4 flex items-center justify-center">
+                            <i class="fas fa-user text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900">Mary Parsitau</h3>
+                        <p class="text-gray-600">Environmental Champion</p>
+                    </div>
+                    <blockquote class="text-gray-700 italic mb-4">
+                        "Our community was struggling with deforestation. NALEPO taught us sustainable farming and helped us plant 300 trees. Now our land is green again, and our crops are thriving."
+                    </blockquote>
+                    <div class="text-sm text-gray-500">
+                        <strong>Impact:</strong> Led reforestation of 10 hectares, improved crop yields by 40%
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-16 bg-maasai-red text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Community Voices</h2>
+                <p class="text-xl opacity-90 max-w-3xl mx-auto">Hear directly from community members about the impact of our programs.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white bg-opacity-10 rounded-lg p-8">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <blockquote class="text-lg mb-4">
+                        "NALEPO doesn't just give handouts—they empower us with knowledge and skills. The literacy program helped me read and write, and now I can help my children with their homework."
+                    </blockquote>
+                    <cite class="font-semibold">— Grace Nkaiserry, Community Member</cite>
+                </div>
+
+                <div class="bg-white bg-opacity-10 rounded-lg p-8">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <blockquote class="text-lg mb-4">
+                        "The environmental conservation program taught us how to protect our land while still making a living. Our community is healthier and more prosperous than ever."
+                    </blockquote>
+                    <cite class="font-semibold">— Daniel Saitoti, Village Elder</cite>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Monitoring & Evaluation -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Monitoring & Evaluation</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">We track our progress through rigorous monitoring and community feedback.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="bg-maasai-red text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-chart-line text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Key Performance Indicators</h3>
+                    <p class="text-gray-600">We track trees planted, income growth, number of trainees, and literacy rates to measure our impact.</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-savanna-green text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-calendar-check text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Quarterly Assessments</h3>
+                    <p class="text-gray-600">Regular field assessments ensure our programs are meeting community needs and achieving desired outcomes.</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-sunset-orange text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-comments text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Community Feedback</h3>
+                    <p class="text-gray-600">Continuous feedback loops with community members help us improve and adapt our programs for maximum impact.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-savanna-green text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Be Part of Our Impact Story</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Your support helps us create more success stories and transform more lives in vulnerable communities.</p>
+            <a href="get-involved.html" class="bg-white text-savanna-green hover:bg-gray-100 font-bold py-3 px-8 rounded-lg transition duration-300">Join Our Mission</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="col-span-1 md:col-span-2">
+                    <h3 class="text-2xl font-bold mb-4">NALEPO</h3>
+                    <p class="text-gray-300 mb-4">Natural Livelihood Empowerment and Progress Organization - Empowering communities, transforming lives through sustainable development.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-300 hover:text-white">About Us</a></li>
+                        <li><a href="programs.html" class="text-gray-300 hover:text-white">Programs</a></li>
+                        <li><a href="get-involved.html" class="text-gray-300 hover:text-white">Get Involved</a></li>
+                        <li><a href="contact.html" class="text-gray-300 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact Info</h4>
+                    <div class="space-y-2 text-gray-300">
+                        <p><i class="fas fa-envelope mr-2"></i>nalepo.org@gmail.com</p>
+                        <p><i class="fas fa-phone mr-2"></i>+255 682 398 053</p>
+                        <p><i class="fas fa-globe mr-2"></i>nalepoorga.com</p>
+                        <p><i class="fas fa-user mr-2"></i>Emanuel Punuka, CEO</p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p class="text-gray-300">&copy; 2024 NALEPO. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.querySelector('.mobile-menu-button');
+        const mobileMenu = document.querySelector('.mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

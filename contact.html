@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - NALEPO</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'maasai-red': '#B91C1C',
+                        'earth-brown': '#92400E',
+                        'savanna-green': '#059669',
+                        'sunset-orange': '#EA580C',
+                        'warm-beige': '#FEF3C7'
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <h1 class="text-2xl font-bold text-maasai-red">NALEPO</h1>
+                        <p class="text-xs text-gray-600">Natural Spring of Hope</p>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-maasai-red transition">Home</a>
+                    <a href="about.html" class="text-gray-700 hover:text-maasai-red transition">About</a>
+                    <a href="programs.html" class="text-gray-700 hover:text-maasai-red transition">Programs</a>
+                    <a href="get-involved.html" class="text-gray-700 hover:text-maasai-red transition">Get Involved</a>
+                    <a href="impact.html" class="text-gray-700 hover:text-maasai-red transition">Impact</a>
+                    <a href="contact.html" class="text-maasai-red font-semibold">Contact</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="mobile-menu-button">
+                        <i class="fas fa-bars text-gray-700"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div class="mobile-menu hidden md:hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white">
+                <a href="index.html" class="block px-3 py-2 text-gray-700">Home</a>
+                <a href="about.html" class="block px-3 py-2 text-gray-700">About</a>
+                <a href="programs.html" class="block px-3 py-2 text-gray-700">Programs</a>
+                <a href="get-involved.html" class="block px-3 py-2 text-gray-700">Get Involved</a>
+                <a href="impact.html" class="block px-3 py-2 text-gray-700">Impact</a>
+                <a href="contact.html" class="block px-3 py-2 text-maasai-red font-semibold">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-r from-savanna-green to-earth-brown text-white pt-16">
+        <div class="absolute inset-0 bg-black opacity-30"></div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6">Contact Us</h1>
+                <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">Get in touch with us to learn more about our work or to get involved in our mission.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Information -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Get in Touch</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">We'd love to hear from you. Reach out to us through any of the following channels.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+                <!-- Email -->
+                <div class="text-center p-6 bg-gray-50 rounded-lg">
+                    <div class="bg-maasai-red text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-envelope text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Email</h3>
+                    <p class="text-gray-600">nalepo.org@gmail.com</p>
+                </div>
+
+                <!-- Phone -->
+                <div class="text-center p-6 bg-gray-50 rounded-lg">
+                    <div class="bg-savanna-green text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-phone text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Phone</h3>
+                    <p class="text-gray-600">+255 682 398 053</p>
+                </div>
+
+                <!-- Website -->
+                <div class="text-center p-6 bg-gray-50 rounded-lg">
+                    <div class="bg-sunset-orange text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-globe text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Website</h3>
+                    <p class="text-gray-600">nalepoorga.com</p>
+                </div>
+
+                <!-- Leadership -->
+                <div class="text-center p-6 bg-gray-50 rounded-lg">
+                    <div class="bg-earth-brown text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-user text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">CEO</h3>
+                    <p class="text-gray-600">Emanuel Punuka</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form & Map Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Contact Form -->
+                <div class="bg-white rounded-lg shadow-lg p-8">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6">Send us a Message</h3>
+                    <form class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="firstName" class="block text-sm font-medium text-gray-700 mb-2">First Name</label>
+                                <input type="text" id="firstName" name="firstName" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-maasai-red focus:border-transparent" required>
+                            </div>
+                            <div>
+                                <label for="lastName" class="block text-sm font-medium text-gray-700 mb-2">Last Name</label>
+                                <input type="text" id="lastName" name="lastName" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-maasai-red focus:border-transparent" required>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email Address</label>
+                            <input type="email" id="email" name="email" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-maasai-red focus:border-transparent" required>
+                        </div>
+                        
+                        <div>
+                            <label for="phone" class="block text-sm font-medium text-gray-700 mb-2">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-maasai-red focus:border-transparent">
+                        </div>
+                        
+                        <div>
+                            <label for="subject" class="block text-sm font-medium text-gray-700 mb-2">Subject</label>
+                            <select id="subject" name="subject" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-maasai-red focus:border-transparent" required>
+                                <option value="">Select a subject</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="volunteer">Volunteer Opportunities</option>
+                                <option value="donation">Donation Information</option>
+                                <option value="partnership">Partnership Opportunities</option>
+                                <option value="media">Media Inquiry</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700 mb-2">Message</label>
+                            <textarea id="message" name="message" rows="6" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-maasai-red focus:border-transparent" placeholder="Tell us how we can help you..." required></textarea>
+                        </div>
+                        
+                        <div class="flex items-center">
+                            <input type="checkbox" id="newsletter" name="newsletter" class="h-4 w-4 text-maasai-red focus:ring-maasai-red border-gray-300 rounded">
+                            <label for="newsletter" class="ml-2 block text-sm text-gray-700">
+                                Subscribe to our newsletter for updates and impact stories
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="w-full bg-maasai-red text-white font-bold py-3 px-6 rounded-lg hover:bg-red-700 transition duration-300">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Office Information -->
+                <div class="space-y-8">
+                    <!-- Office Details -->
+                    <div class="bg-white rounded-lg shadow-lg p-8">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-6">Our Office</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <div class="bg-maasai-red text-white rounded-full w-8 h-8 flex items-center justify-center mr-4 mt-1">
+                                    <i class="fas fa-map-marker-alt text-sm"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900">Address</h4>
+                                    <p class="text-gray-600">Kajiado County, Kenya<br>Maasai Community Center<br>P.O. Box 123, Kajiado</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-savanna-green text-white rounded-full w-8 h-8 flex items-center justify-center mr-4 mt-1">
+                                    <i class="fas fa-clock text-sm"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900">Office Hours</h4>
+                                    <p class="text-gray-600">Monday - Friday: 8:00 AM - 5:00 PM<br>Saturday: 9:00 AM - 2:00 PM<br>Sunday: Closed</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-sunset-orange text-white rounded-full w-8 h-8 flex items-center justify-center mr-4 mt-1">
+                                    <i class="fas fa-language text-sm"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900">Languages</h4>
+                                    <p class="text-gray-600">English, Swahili, Maa (Maasai)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Quick Contact -->
+                    <div class="bg-maasai-red text-white rounded-lg p-8">
+                        <h3 class="text-xl font-bold mb-4">Need Immediate Assistance?</h3>
+                        <p class="mb-6">For urgent matters or emergency situations, please contact us directly:</p>
+                        <div class="space-y-3">
+                            <a href="tel:+255682398053" class="flex items-center text-white hover:text-gray-200 transition">
+                                <i class="fas fa-phone mr-3"></i>
+                                <span>+255 682 398 053</span>
+                            </a>
+                            <a href="mailto:nalepo.org@gmail.com" class="flex items-center text-white hover:text-gray-200 transition">
+                                <i class="fas fa-envelope mr-3"></i>
+                                <span>nalepo.org@gmail.com</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Social Media -->
+                    <div class="bg-white rounded-lg shadow-lg p-8">
+                        <h3 class="text-xl font-bold text-gray-900 mb-4">Follow Us</h3>
+                        <p class="text-gray-600 mb-6">Stay connected with our latest updates and impact stories on social media.</p>
+                        <div class="flex space-x-4">
+                            <a href="#" class="bg-blue-600 text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-blue-700 transition">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="bg-blue-400 text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-blue-500 transition">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="bg-pink-600 text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-pink-700 transition">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="bg-blue-800 text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-blue-900 transition">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Frequently Asked Questions</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Find answers to common questions about our organization and programs.</p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto space-y-6">
+                <div class="bg-gray-50 rounded-lg p-6">
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">How can I volunteer with NALEPO?</h3>
+                    <p class="text-gray-600">We welcome volunteers with various skills and backgrounds. Please fill out our contact form with "Volunteer Opportunities" as the subject, and we'll get back to you with current opportunities that match your interests and skills.</p>
+                </div>
+                
+                <div class="bg-gray-50 rounded-lg p-6">
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">How are donations used?</h3>
+                    <p class="text-gray-600">Your donations go directly to our programs: 45% to program implementation, 25% to staffing, 15% to administration, 10% to monitoring & evaluation, and 5% to contingency funds. We provide regular reports on fund utilization.</p>
+                </div>
+                
+                <div class="bg-gray-50 rounded-lg p-6">
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Can I visit your projects in person?</h3>
+                    <p class="text-gray-600">Yes! We organize field visits for donors, partners, and volunteers. Please contact us in advance to arrange a visit. We'll coordinate with our field teams to ensure you get a comprehensive view of our work.</p>
+                </div>
+                
+                <div class="bg-gray-50 rounded-lg p-6">
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">How do you measure impact?</h3>
+                    <p class="text-gray-600">We use rigorous monitoring and evaluation systems, tracking KPIs like number of trees planted, income growth, literacy rates, and number of trainees. We conduct quarterly field assessments and maintain continuous feedback loops with communities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-savanna-green text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Make a Difference?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Join us in our mission to empower communities and transform lives. Every action counts.</p>
+            <div class="space-x-4">
+                <a href="get-involved.html" class="bg-white text-savanna-green hover:bg-gray-100 font-bold py-3 px-8 rounded-lg transition duration-300 inline-block">Get Involved</a>
+                <a href="programs.html" class="bg-transparent border-2 border-white hover:bg-white hover:text-savanna-green text-white font-bold py-3 px-8 rounded-lg transition duration-300 inline-block">View Programs</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="col-span-1 md:col-span-2">
+                    <h3 class="text-2xl font-bold mb-4">NALEPO</h3>
+                    <p class="text-gray-300 mb-4">Natural Livelihood Empowerment and Progress Organization - Empowering communities, transforming lives through sustainable development.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-300 hover:text-white">About Us</a></li>
+                        <li><a href="programs.html" class="text-gray-300 hover:text-white">Programs</a></li>
+                        <li><a href="get-involved.html" class="text-gray-300 hover:text-white">Get Involved</a></li>
+                        <li><a href="impact.html" class="text-gray-300 hover:text-white">Impact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact Info</h4>
+                    <div class="space-y-2 text-gray-300">
+                        <p><i class="fas fa-envelope mr-2"></i>nalepo.org@gmail.com</p>
+                        <p><i class="fas fa-phone mr-2"></i>+255 682 398 053</p>
+                        <p><i class="fas fa-globe mr-2"></i>nalepoorga.com</p>
+                        <p><i class="fas fa-user mr-2"></i>Emanuel Punuka, CEO</p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p class="text-gray-300">&copy; 2024 NALEPO. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.querySelector('.mobile-menu-button');
+        const mobileMenu = document.querySelector('.mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Form submission
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! We will get back to you soon.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
