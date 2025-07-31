@@ -7,8 +7,8 @@ class PesaPalConfig {
     const SANDBOX_BASE_URL = 'https://cybqa.pesapal.com/pesapalv3';
     
     // Live URLs (for production)
-    const LIVE_CONSUMER_KEY = 'fTbQ1l2IAUoLcPuJtYXhs/qFnrRijeY2';
-    const LIVE_CONSUMER_SECRET = 'ZcEwecasRA4z5KUiazajNdEgwPg=';
+    const LIVE_CONSUMER_KEY = '';
+    const LIVE_CONSUMER_SECRET = '';
     const LIVE_BASE_URL = 'https://pay.pesapal.com/v3';
     
     // Current environment (set to 'live' for production)
