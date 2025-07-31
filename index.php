@@ -3,20 +3,112 @@ $page_title = "Home";
 include 'includes/header.php';
 ?>
 
-    <!-- Hero Section -->
-    <section class="relative bg-gradient-to-r from-maasai-red to-sunset-orange text-white pt-16">
-        <div class="absolute inset-0 bg-black opacity-40"></div>
-        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
-            <div class="text-center">
-                <h1 class="text-4xl md:text-6xl font-bold mb-6">Empowering Communities, Transforming Lives</h1>
-                <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">NALEPO means "spring" in Maasai—symbolizing life, abundance, and sustainability for vulnerable communities.</p>
-                <div class="space-x-4">
-                    <a href="/get-involved" class="bg-savanna-green hover:bg-green-700 text-white font-bold py-3 px-8 rounded-lg transition duration-300">Donate Now</a>
-                    <a href="/about" class="bg-transparent border-2 border-white hover:bg-white hover:text-maasai-red text-white font-bold py-3 px-8 rounded-lg transition duration-300">Learn More</a>
+    <!-- Hero Section with Image Slider -->
+    <section class="relative h-screen overflow-hidden">
+        <!-- Image Slider Container -->
+        <div class="absolute inset-0 slider-container">
+            <!-- Slide 1 -->
+            <div class="slide active absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-1000" 
+                 style="background-image: url('https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');">
+                <div class="absolute inset-0 bg-black opacity-50"></div>
+            </div>
+            
+            <!-- Slide 2 -->
+            <div class="slide absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-1000 opacity-0" 
+                 style="background-image: url('https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');">
+                <div class="absolute inset-0 bg-black opacity-50"></div>
+            </div>
+            
+            <!-- Slide 3 -->
+            <div class="slide absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-1000 opacity-0" 
+                 style="background-image: url('https://images.unsplash.com/photo-1594736797933-d0401ba2fe65?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');">
+                <div class="absolute inset-0 bg-black opacity-50"></div>
+            </div>
+        </div>
+        
+        <!-- Content Overlay -->
+        <div class="relative z-10 flex items-center justify-center h-full">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6 animate-fade-in">Empowering Communities, Transforming Lives</h1>
+                <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto animate-slide-up">NALEPO means "spring" in Maasai—symbolizing life, abundance, and sustainability for vulnerable communities.</p>
+                <div class="space-x-4 animate-slide-up">
+                    <a href="/get-involved" class="bg-savanna-green hover:bg-green-700 text-white font-bold py-3 px-8 rounded-lg transition duration-300 transform hover:scale-105">Donate Now</a>
+                    <a href="/about" class="bg-transparent border-2 border-white hover:bg-white hover:text-maasai-red text-white font-bold py-3 px-8 rounded-lg transition duration-300 transform hover:scale-105">Learn More</a>
                 </div>
             </div>
         </div>
+        
+        <!-- Slider Navigation Dots -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
+            <div class="flex space-x-3">
+                <button class="slider-dot active w-3 h-3 rounded-full bg-white opacity-75 hover:opacity-100 transition-opacity duration-300" data-slide="0"></button>
+                <button class="slider-dot w-3 h-3 rounded-full bg-white opacity-50 hover:opacity-100 transition-opacity duration-300" data-slide="1"></button>
+                <button class="slider-dot w-3 h-3 rounded-full bg-white opacity-50 hover:opacity-100 transition-opacity duration-300" data-slide="2"></button>
+            </div>
+        </div>
+        
+        <!-- Slider Arrow Navigation -->
+        <button class="absolute left-4 top-1/2 transform -translate-y-1/2 z-20 text-white hover:text-sunset-orange transition-colors duration-300" id="prevSlide">
+            <i class="fas fa-chevron-left text-3xl"></i>
+        </button>
+        <button class="absolute right-4 top-1/2 transform -translate-y-1/2 z-20 text-white hover:text-sunset-orange transition-colors duration-300" id="nextSlide">
+            <i class="fas fa-chevron-right text-3xl"></i>
+        </button>
     </section>
+
+    <!-- Add this JavaScript before the closing body tag -->
+    <script>
+        // Image Slider Functionality
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const dots = document.querySelectorAll('.slider-dot');
+        const totalSlides = slides.length;
+        
+        function showSlide(index) {
+            // Hide all slides
+            slides.forEach(slide => {
+                slide.classList.remove('opacity-100');
+                slide.classList.add('opacity-0');
+            });
+            
+            // Show current slide
+            slides[index].classList.remove('opacity-0');
+            slides[index].classList.add('opacity-100');
+            
+            // Update dots
+            dots.forEach(dot => {
+                dot.classList.remove('active', 'opacity-75');
+                dot.classList.add('opacity-50');
+            });
+            dots[index].classList.add('active', 'opacity-75');
+            dots[index].classList.remove('opacity-50');
+        }
+        
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            showSlide(currentSlide);
+        }
+        
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+            showSlide(currentSlide);
+        }
+        
+        // Auto-advance slides every 5 seconds
+        setInterval(nextSlide, 5000);
+        
+        // Navigation event listeners
+        document.getElementById('nextSlide').addEventListener('click', nextSlide);
+        document.getElementById('prevSlide').addEventListener('click', prevSlide);
+        
+        // Dot navigation
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                currentSlide = index;
+                showSlide(currentSlide);
+            });
+        });
+    </script>
 
     <!-- Mission Section -->
     <section class="py-16 bg-white">
