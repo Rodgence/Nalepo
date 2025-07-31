@@ -63,3 +63,24 @@ $current_page = basename($_SERVER['PHP_SELF'], '.php');
             </div>
         </div>
     </nav>
+<!-- Desktop Navigation -->
+<div class="hidden md:flex space-x-8">
+    <a href="/" class="<?php echo ($page_title == 'Home') ? 'text-sunset-orange border-b-2 border-sunset-orange' : 'text-white hover:text-sunset-orange'; ?> transition duration-300">Home</a>
+    <a href="/about" class="<?php echo ($page_title == 'About') ? 'text-sunset-orange border-b-2 border-sunset-orange' : 'text-white hover:text-sunset-orange'; ?> transition duration-300">About</a>
+    <a href="/programs" class="<?php echo ($page_title == 'Programs') ? 'text-sunset-orange border-b-2 border-sunset-orange' : 'text-white hover:text-sunset-orange'; ?> transition duration-300">Programs</a>
+    <a href="/get-involved" class="<?php echo ($page_title == 'Get Involved') ? 'text-sunset-orange border-b-2 border-sunset-orange' : 'text-white hover:text-sunset-orange'; ?> transition duration-300">Get Involved</a>
+    <a href="/impact" class="<?php echo ($page_title == 'Impact') ? 'text-sunset-orange border-b-2 border-sunset-orange' : 'text-white hover:text-sunset-orange'; ?> transition duration-300">Impact</a>
+    <a href="/contact" class="<?php echo ($page_title == 'Contact') ? 'text-sunset-orange border-b-2 border-sunset-orange' : 'text-white hover:text-sunset-orange'; ?> transition duration-300">Contact</a>
+</div>
+
+<!-- Mobile Navigation -->
+<div id="mobile-menu" class="hidden md:hidden bg-maasai-red">
+    <div class="px-2 pt-2 pb-3 space-y-1">
+        <a href="/" class="<?php echo ($page_title == 'Home') ? 'bg-sunset-orange text-white' : 'text-white hover:bg-sunset-orange'; ?> block px-3 py-2 rounded-md text-base font-medium transition duration-300">Home</a>
+        <a href="/about" class="<?php echo ($page_title == 'About') ? 'bg-sunset-orange text-white' : 'text-white hover:bg-sunset-orange'; ?> block px-3 py-2 rounded-md text-base font-medium transition duration-300">About</a>
+        <a href="/programs" class="<?php echo ($page_title == 'Programs') ? 'bg-sunset-orange text-white' : 'text-white hover:bg-sunset-orange'; ?> block px-3 py-2 rounded-md text-base font-medium transition duration-300">Programs</a>
+        <a href="/get-involved" class="<?php echo ($page_title == 'Get Involved') ? 'bg-sunset-orange text-white' : 'text-white hover:bg-sunset-orange'; ?> block px-3 py-2 rounded-md text-base font-medium transition duration-300">Get Involved</a>
+        <a href="/impact" class="<?php echo ($page_title == 'Impact') ? 'bg-sunset-orange text-white' : 'text-white hover:bg-sunset-orange'; ?> block px-3 py-2 rounded-md text-base font-medium transition duration-300">Impact</a>
+        <a href="/contact" class="<?php echo ($page_title == 'Contact') ? 'bg-sunset-orange text-white' : 'text-white hover:bg-sunset-orange'; ?> block px-3 py-2 rounded-md text-base font-medium transition duration-300">Contact</a>
+    </div>
+</div>

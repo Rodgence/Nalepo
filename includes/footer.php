@@ -13,13 +13,14 @@
                     </div>
                 </div>
                 <div>
-                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <h3 class="text-lg font-bold mb-4">Quick Links</h3>
                     <ul class="space-y-2">
-                        <li><a href="about.php" class="text-gray-300 hover:text-white">About Us</a></li>
-                        <li><a href="programs.php" class="text-gray-300 hover:text-white">Programs</a></li>
-                        <li><a href="get-involved.php" class="text-gray-300 hover:text-white">Get Involved</a></li>
-                        <li><a href="impact.php" class="text-gray-300 hover:text-white">Impact</a></li>
-                        <li><a href="contact.php" class="text-gray-300 hover:text-white">Contact</a></li>
+                        <li><a href="/" class="hover:text-sunset-orange transition duration-300">Home</a></li>
+                        <li><a href="/about" class="hover:text-sunset-orange transition duration-300">About</a></li>
+                        <li><a href="/programs" class="hover:text-sunset-orange transition duration-300">Programs</a></li>
+                        <li><a href="/get-involved" class="hover:text-sunset-orange transition duration-300">Get Involved</a></li>
+                        <li><a href="/impact" class="hover:text-sunset-orange transition duration-300">Impact</a></li>
+                        <li><a href="/contact" class="hover:text-sunset-orange transition duration-300">Contact</a></li>
                     </ul>
                 </div>
                 <div>

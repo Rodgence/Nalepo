@@ -11,8 +11,8 @@ include 'includes/header.php';
                 <h1 class="text-4xl md:text-6xl font-bold mb-6">Empowering Communities, Transforming Lives</h1>
                 <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">NALEPO means "spring" in Maasai—symbolizing life, abundance, and sustainability for vulnerable communities.</p>
                 <div class="space-x-4">
-                    <a href="get-involved.php" class="bg-savanna-green hover:bg-green-700 text-white font-bold py-3 px-8 rounded-lg transition duration-300">Donate Now</a>
-                    <a href="about.php" class="bg-transparent border-2 border-white hover:bg-white hover:text-maasai-red text-white font-bold py-3 px-8 rounded-lg transition duration-300">Learn More</a>
+                    <a href="/get-involved" class="bg-savanna-green hover:bg-green-700 text-white font-bold py-3 px-8 rounded-lg transition duration-300">Donate Now</a>
+                    <a href="/about" class="bg-transparent border-2 border-white hover:bg-white hover:text-maasai-red text-white font-bold py-3 px-8 rounded-lg transition duration-300">Learn More</a>
                 </div>
             </div>
         </div>
@@ -226,8 +226,8 @@ include 'includes/header.php';
             <h2 class="text-3xl md:text-4xl font-bold mb-4">Join Us in Making a Difference</h2>
             <p class="text-xl mb-8 max-w-2xl mx-auto">Your support can transform lives and build sustainable communities. Let us create a ripple of change that echoes across generations.</p>
             <div class="space-x-4">
-                <a href="get-involved.php" class="bg-white text-savanna-green hover:bg-gray-100 font-bold py-3 px-8 rounded-lg transition duration-300">Get Involved Today</a>
-                <a href="contact.php" class="bg-transparent border-2 border-white hover:bg-white hover:text-savanna-green text-white font-bold py-3 px-8 rounded-lg transition duration-300">Contact Us</a>
+                <a href="/get-involved" class="bg-white text-savanna-green hover:bg-gray-100 font-bold py-3 px-8 rounded-lg transition duration-300">Get Involved Today</a>
+                <a href="/contact" class="bg-transparent border-2 border-white hover:bg-white hover:text-savanna-green text-white font-bold py-3 px-8 rounded-lg transition duration-300">Contact Us</a>
             </div>
         </div>
     </section>
