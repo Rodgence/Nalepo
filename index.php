@@ -39,7 +39,7 @@ include 'includes/header.php';
                 <h1 class="text-4xl md:text-6xl font-bold mb-6 animate-fade-in">Empowering Communities, Transforming Lives</h1>
                 <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto animate-slide-up">NALEPO means \"spring\" in Maasai—symbolizing life, abundance, and sustainability for vulnerable communities.</p>
                 <div class="space-x-4 animate-slide-up">
-                    <a href="/get-involved" class="bg-savanna-green hover:bg-green-700 text-white font-bold py-3 px-8 rounded-lg transition duration-300 transform hover:scale-105">Donate Now</a>
+                    <a href="get-involved.php" class="bg-savanna-green hover:bg-green-700 text-white font-bold py-3 px-8 rounded-lg transition duration-300 transform hover:scale-105">Donate Now</a>
                     <a href="/about" class="bg-transparent border-2 border-white hover:bg-white hover:text-maasai-red text-white font-bold py-3 px-8 rounded-lg transition duration-300 transform hover:scale-105">Learn More</a>
                 </div>
             </div>
@@ -146,26 +146,73 @@ include 'includes/header.php';
                         <p class="text-gray-600">We integrate local knowledge, prioritize cultural relevance, and design sustainable, scalable solutions that strengthen social cohesion and foster community-led development.</p>
                     </div>
                 </div>
-                <div class="bg-maasai-red text-white p-8 rounded-lg">
-                    <h3 class="text-2xl font-bold mb-6">Current Challenges</h3>
-                    <div class="space-y-4">
-                        <div class="flex items-center">
-                            <i class="fas fa-exclamation-triangle text-sunset-orange mr-3"></i>
-                            <span>Literacy rates below 40%</span>
+                <div class="relative w-full h-96 overflow-hidden">
+                    <!-- Full-width Image Slider -->
+                    <div class="challenges-slider relative w-full h-full">
+                        <div class="slides-container w-full h-full">
+                            <div class="slide active absolute inset-0">
+                                <img src="images/WhatsApp Image 2025-07-31 at 11.03.59 AM (2).jpeg" alt="Challenge 1" class="w-full h-full object-cover">
+                            </div>
+                            
+                            <div class="slide opacity-0 absolute inset-0">
+                                <img src="images/WhatsApp Image 2025-07-31 at 11.03.59 AM (1).jpeg" alt="Challenge 2" class="w-full h-full object-cover">
+                            </div>
+                            
+                            <div class="slide opacity-0 absolute inset-0">
+                                <img src="images/WhatsApp Image 2025-07-31 at 11.04.00 AM.jpeg" alt="Challenge 3" class="w-full h-full object-cover">
+                            </div>
+                            
+                            <div class="slide opacity-0 absolute inset-0">
+                                <img src="images/WhatsApp Image 2025-07-31 at 11.04.00 AM (1).jpeg" alt="Challenge 4" class="w-full h-full object-cover">
+                            </div>
                         </div>
-                        <div class="flex items-center">
-                            <i class="fas fa-coins text-sunset-orange mr-3"></i>
-                            <span>Limited income opportunities</span>
-                        </div>
-                        <div class="flex items-center">
-                            <i class="fas fa-hospital text-sunset-orange mr-3"></i>
-                            <span>Restricted healthcare access</span>
-                        </div>
-                        <div class="flex items-center">
-                            <i class="fas fa-seedling text-sunset-orange mr-3"></i>
-                            <span>Environmental degradation</span>
+                        
+                        <!-- Navigation Dots -->
+                        <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2 z-10">
+                            <button class="challenge-dot active w-3 h-3 rounded-full bg-white opacity-75"></button>
+                            <button class="challenge-dot w-3 h-3 rounded-full bg-white opacity-50"></button>
+                            <button class="challenge-dot w-3 h-3 rounded-full bg-white opacity-50"></button>
+                            <button class="challenge-dot w-3 h-3 rounded-full bg-white opacity-50"></button>
                         </div>
                     </div>
+
+                    <script>
+                        // Auto-slide functionality
+                        const challengeSlides = document.querySelectorAll('.challenges-slider .slide');
+                        const challengeDots = document.querySelectorAll('.challenge-dot');
+                        let currentChallengeSlide = 0;
+
+                        function showChallengeSlide(index) {
+                            challengeSlides.forEach(slide => {
+                                slide.classList.remove('opacity-100');
+                                slide.classList.add('opacity-0');
+                            });
+                            challengeDots.forEach(dot => {
+                                dot.classList.remove('active', 'opacity-75');
+                                dot.classList.add('opacity-50');
+                            });
+
+                            challengeSlides[index].classList.remove('opacity-0');
+                            challengeSlides[index].classList.add('opacity-100');
+                            challengeDots[index].classList.add('active', 'opacity-75');
+                        }
+
+                        function nextChallengeSlide() {
+                            currentChallengeSlide = (currentChallengeSlide + 1) % challengeSlides.length;
+                            showChallengeSlide(currentChallengeSlide);
+                        }
+
+                        // Change slides every 4 seconds
+                        setInterval(nextChallengeSlide, 4000);
+
+                        // Add click handlers for dots
+                        challengeDots.forEach((dot, index) => {
+                            dot.addEventListener('click', () => {
+                                currentChallengeSlide = index;
+                                showChallengeSlide(currentChallengeSlide);
+                            });
+                        });
+                    </script>
                 </div>
             </div>
         </div>
@@ -327,10 +374,89 @@ include 'includes/header.php';
             <h2 class="text-3xl md:text-4xl font-bold mb-4">Join Us in Making a Difference</h2>
             <p class="text-xl mb-8 max-w-2xl mx-auto">Your support can transform lives and build sustainable communities. Let us create a ripple of change that echoes across generations.</p>
             <div class="space-x-4">
-                <a href="/get-involved" class="bg-white text-savanna-green hover:bg-gray-100 font-bold py-3 px-8 rounded-lg transition duration-300">Get Involved Today</a>
+                <a href="get-involved.php" class="bg-white text-savanna-green hover:bg-gray-100 font-bold py-3 px-8 rounded-lg transition duration-300">Get Involved Today</a>
                 <a href="/contact" class="bg-transparent border-2 border-white hover:bg-white hover:text-savanna-green text-white font-bold py-3 px-8 rounded-lg transition duration-300">Contact Us</a>
             </div>
         </div>
     </section>
+
+     <!-- Gallery Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Impact in Action</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">See the communities we serve and the positive changes happening through your support.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Gallery Images -->
+                <div class="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+                    <img src="images/WhatsApp Image 2025-07-31 at 11.03.59 AM (1).jpeg" alt="Community Impact" class="w-full h-64 object-cover group-hover:scale-105 transition duration-300">
+                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition duration-300 flex items-center justify-center">
+                        <i class="fas fa-search-plus text-white text-2xl opacity-0 group-hover:opacity-100 transition duration-300"></i>
+                    </div>
+                </div>
+                
+                <div class="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+                    <img src="images/WhatsApp Image 2025-07-31 at 11.03.59 AM (2).jpeg" alt="Community Development" class="w-full h-64 object-cover group-hover:scale-105 transition duration-300">
+                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition duration-300 flex items-center justify-center">
+                        <i class="fas fa-search-plus text-white text-2xl opacity-0 group-hover:opacity-100 transition duration-300"></i>
+                    </div>
+                </div>
+                
+                <div class="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+                    <img src="images/WhatsApp Image 2025-07-31 at 11.04.00 AM (1).jpeg" alt="Education Programs" class="w-full h-64 object-cover group-hover:scale-105 transition duration-300">
+                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition duration-300 flex items-center justify-center">
+                        <i class="fas fa-search-plus text-white text-2xl opacity-0 group-hover:opacity-100 transition duration-300"></i>
+                    </div>
+                </div>
+                
+                <div class="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+                    <img src="images/WhatsApp Image 2025-07-31 at 11.04.00 AM.jpeg" alt="Environmental Conservation" class="w-full h-64 object-cover group-hover:scale-105 transition duration-300">
+                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition duration-300 flex items-center justify-center">
+                        <i class="fas fa-search-plus text-white text-2xl opacity-0 group-hover:opacity-100 transition duration-300"></i>
+                    </div>
+                </div>
+                
+                <div class="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+                    <img src="images/WhatsApp Image 2025-07-31 at 11.23.25 AM.jpeg" alt="Healthcare Initiatives" class="w-full h-64 object-cover group-hover:scale-105 transition duration-300">
+                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition duration-300 flex items-center justify-center">
+                        <i class="fas fa-search-plus text-white text-2xl opacity-0 group-hover:opacity-100 transition duration-300"></i>
+                    </div>
+                </div>
+                
+                <div class="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+                    <img src="images/WhatsApp Image 2025-07-31 at 11.30.46 AM.jpeg" alt="Economic Empowerment" class="w-full h-64 object-cover group-hover:scale-105 transition duration-300">
+                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition duration-300 flex items-center justify-center">
+                        <i class="fas fa-search-plus text-white text-2xl opacity-0 group-hover:opacity-100 transition duration-300"></i>
+                    </div>
+                </div>
+                
+                <div class="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+                    <img src="images/WhatsApp Image 2025-07-31 at 11.31.23 AM.jpeg" alt="Women Empowerment" class="w-full h-64 object-cover group-hover:scale-105 transition duration-300">
+                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition duration-300 flex items-center justify-center">
+                        <i class="fas fa-search-plus text-white text-2xl opacity-0 group-hover:opacity-100 transition duration-300"></i>
+                    </div>
+                </div>
+                
+                <div class="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+                    <img src="images/WhatsApp Image 2025-07-31 at 11.32.02 AM.jpeg" alt="Youth Development" class="w-full h-64 object-cover group-hover:scale-105 transition duration-300">
+                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition duration-300 flex items-center justify-center">
+                        <i class="fas fa-search-plus text-white text-2xl opacity-0 group-hover:opacity-100 transition duration-300"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Gallery CTA -->
+            <div class="text-center mt-12">
+                <p class="text-lg text-gray-600 mb-6">Every image tells a story of transformation and hope.</p>
+                <a href="get-involved.php" class="bg-maasai-red hover:bg-red-700 text-white font-bold py-3 px-8 rounded-lg transition duration-300 inline-block">
+                    <i class="fas fa-chart-line mr-2"></i>
+                    Donate Now
+                </a>
+            </div>
+        </div>
+    </section>
+
 
 <?php include 'includes/footer.php'; ?>

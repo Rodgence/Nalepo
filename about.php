@@ -4,8 +4,11 @@ include 'includes/header.php';
 ?>
 
     <!-- Hero Section -->
-    <section class="relative bg-gradient-to-r from-earth-brown to-maasai-red text-white pt-16">
-        <div class="absolute inset-0 bg-black opacity-30"></div>
+    <section class="relative text-white pt-16">
+        <div class="absolute inset-0">
+            <img src="images/WhatsApp Image 2025-07-31 at 11.03.59 AM (2).jpeg" alt="NALEPO Community Work" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-black opacity-40"></div>
+        </div>
         <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
             <div class="text-center">
                 <h1 class="text-4xl md:text-6xl font-bold mb-6">About NALEPO</h1>
@@ -37,6 +40,86 @@ include 'includes/header.php';
             </div>
         </div>
     </section>
+
+<section class="py-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="relative">
+            <div class="overflow-hidden rounded-lg">
+                <div class="flex transition-transform duration-500 ease-in-out" id="imageSlider">
+                    <img src="images/WhatsApp Image 2025-07-31 at 11.03.59 AM (1).jpeg" alt="Community Development" class="w-full h-[500px] object-cover flex-shrink-0">
+                    <img src="images/WhatsApp Image 2025-07-31 at 11.03.59 AM (2).jpeg" alt="Education Programs" class="w-full h-[500px] object-cover flex-shrink-0">
+                    <img src="images/WhatsApp Image 2025-07-31 at 11.04.00 AM (1).jpeg" alt="Environmental Conservation" class="w-full h-[500px] object-cover flex-shrink-0">
+                    <img src="images/WhatsApp Image 2025-07-31 at 11.04.00 AM.jpeg" alt="Healthcare Initiatives" class="w-full h-[500px] object-cover flex-shrink-0">
+                    <img src="images/WhatsApp Image 2025-07-31 at 11.30.46 AM.jpeg" alt="Economic Empowerment" class="w-full h-[500px] object-cover flex-shrink-0">
+                    <img src="images/WhatsApp Image 2025-07-31 at 11.31.23 AM.jpeg" alt="Women Empowerment" class="w-full h-[500px] object-cover flex-shrink-0">
+                    <img src="images/WhatsApp Image 2025-07-31 at 11.32.02 AM.jpeg" alt="Youth Development" class="w-full h-[500px] object-cover flex-shrink-0">
+                </div>
+            </div>
+            
+            <!-- Navigation buttons -->
+            <button onclick="moveSlide(-1)" class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-3 rounded-full hover:bg-opacity-75 transition duration-300">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button onclick="moveSlide(1)" class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-3 rounded-full hover:bg-opacity-75 transition duration-300">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+            
+            <!-- Slide indicators -->
+            <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+                <button onclick="currentSlide(1)" class="w-3 h-3 bg-white bg-opacity-50 rounded-full hover:bg-opacity-100 transition duration-300"></button>
+                <button onclick="currentSlide(2)" class="w-3 h-3 bg-white bg-opacity-50 rounded-full hover:bg-opacity-100 transition duration-300"></button>
+                <button onclick="currentSlide(3)" class="w-3 h-3 bg-white bg-opacity-50 rounded-full hover:bg-opacity-100 transition duration-300"></button>
+                <button onclick="currentSlide(4)" class="w-3 h-3 bg-white bg-opacity-50 rounded-full hover:bg-opacity-100 transition duration-300"></button>
+                <button onclick="currentSlide(5)" class="w-3 h-3 bg-white bg-opacity-50 rounded-full hover:bg-opacity-100 transition duration-300"></button>
+                <button onclick="currentSlide(6)" class="w-3 h-3 bg-white bg-opacity-50 rounded-full hover:bg-opacity-100 transition duration-300"></button>
+                <button onclick="currentSlide(7)" class="w-3 h-3 bg-white bg-opacity-50 rounded-full hover:bg-opacity-100 transition duration-300"></button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+let slideIndex = 0;
+const totalSlides = 7;
+
+function moveSlide(direction) {
+    slideIndex += direction;
+    if (slideIndex >= totalSlides) slideIndex = 0;
+    if (slideIndex < 0) slideIndex = totalSlides - 1;
+    updateSlider();
+}
+
+function currentSlide(index) {
+    slideIndex = index - 1;
+    updateSlider();
+}
+
+function updateSlider() {
+    const slider = document.getElementById('imageSlider');
+    const translateX = -slideIndex * 100;
+    slider.style.transform = `translateX(${translateX}%)`;
+    
+    // Update indicators
+    const indicators = document.querySelectorAll('.absolute.bottom-4 button');
+    indicators.forEach((indicator, index) => {
+        if (index === slideIndex) {
+            indicator.classList.remove('bg-opacity-50');
+            indicator.classList.add('bg-opacity-100');
+        } else {
+            indicator.classList.remove('bg-opacity-100');
+            indicator.classList.add('bg-opacity-50');
+        }
+    });
+}
+
+// Auto-slide every 5 seconds
+setInterval(() => {
+    moveSlide(1);
+}, 5000);
+
+// Initialize
+updateSlider();
+</script>
 
     <!-- Mission & Vision -->
     <section class="py-16 bg-gray-50">

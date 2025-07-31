@@ -3,7 +3,10 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
                 <div class="col-span-1 md:col-span-2">
-                    <h3 class="text-2xl font-bold mb-4">NALEPO</h3>
+                    <div class="flex items-center mb-4">
+                        <img src="images/logo.jpeg" alt="NALEPO Logo" class="h-8 w-auto mr-2">
+                        <h3 class="text-2xl font-bold">NALEPO</h3>
+                    </div>
                     <p class="text-gray-300 mb-4">Natural Livelihood Empowerment and Progress Organization - Empowering communities, transforming lives through sustainable development.</p>
                     <div class="flex space-x-4">
                         <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-facebook-f"></i></a>
@@ -18,7 +21,7 @@
                         <li><a href="/" class="hover:text-sunset-orange transition duration-300">Home</a></li>
                         <li><a href="/about" class="hover:text-sunset-orange transition duration-300">About</a></li>
                         <li><a href="/programs" class="hover:text-sunset-orange transition duration-300">Programs</a></li>
-                        <li><a href="/get-involved" class="hover:text-sunset-orange transition duration-300">Get Involved</a></li>
+                        <li><a href="get-involved.php" class="hover:text-sunset-orange transition duration-300">Get Involved</a></li>
                         <li><a href="/impact" class="hover:text-sunset-orange transition duration-300">Impact</a></li>
                         <li><a href="/contact" class="hover:text-sunset-orange transition duration-300">Contact</a></li>
                     </ul>
@@ -48,13 +51,22 @@
             mobileMenu.classList.toggle('hidden');
         });
 
-        // Form submission (for contact page)
-        const form = document.querySelector('form');
+        // Form submission (for contact page only)
+        const form = document.querySelector('#contact-form');
         if (form) {
+            // Remove the preventDefault - let form submit normally
             form.addEventListener('submit', function(e) {
-                e.preventDefault();
-                alert('Thank you for your message! We will get back to you soon.');
-                this.reset();
+                // Form will submit to send-contact.php
+            });
+        }
+        
+        // Allow donation forms to submit normally
+        const donationForm = document.querySelector('form[action="process-donation.php"]');
+        if (donationForm) {
+            // Remove any existing event listeners that might prevent submission
+            donationForm.addEventListener('submit', function(e) {
+                // Let the form submit normally to process-donation.php
+                // No e.preventDefault() here!
             });
         }
     </script>

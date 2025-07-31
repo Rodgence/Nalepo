@@ -67,7 +67,22 @@ include 'includes/header.php';
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="bg-white rounded-lg shadow-lg p-8">
                 <h3 class="text-2xl font-bold text-gray-900 mb-6 text-center">Send us a Message</h3>
-                <form class="space-y-6">
+                <form id="contact-form" action="send-contact.php" method="POST" class="space-y-6">
+                    <?php if (isset($_GET['status'])): ?>
+                        <?php if ($_GET['status'] === 'success'): ?>
+                            <div class="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded mb-6">
+                                <strong>Success!</strong> Your message has been sent successfully. We'll get back to you soon!
+                            </div>
+                        <?php elseif ($_GET['status'] === 'error'): ?>
+                            <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded mb-6">
+                                <strong>Error!</strong> There was a problem sending your message. Please try again.
+                                <?php if (isset($_GET['msg'])): ?>
+                                    <br><small><?php echo htmlspecialchars($_GET['msg']); ?></small>
+                                <?php endif; ?>
+                            </div>
+                        <?php endif; ?>
+                    <?php endif; ?>
+                    
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div>
                             <label for="firstName" class="block text-sm font-medium text-gray-700 mb-2">First Name</label>
