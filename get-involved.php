@@ -1,65 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Get Involved - NALEPO</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        'maasai-red': '#B91C1C',
-                        'earth-brown': '#92400E',
-                        'savanna-green': '#059669',
-                        'sunset-orange': '#EA580C',
-                        'warm-beige': '#FEF3C7'
-                    }
-                }
-            }
-        }
-    </script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-</head>
-<body class="bg-gray-50">
-    <!-- Navigation -->
-    <nav class="bg-white shadow-lg fixed w-full z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-16">
-                <div class="flex items-center">
-                    <div class="flex-shrink-0">
-                        <h1 class="text-2xl font-bold text-maasai-red">NALEPO</h1>
-                        <p class="text-xs text-gray-600">Natural Spring of Hope</p>
-                    </div>
-                </div>
-                <div class="hidden md:flex items-center space-x-8">
-                    <a href="index.html" class="text-gray-700 hover:text-maasai-red transition">Home</a>
-                    <a href="about.html" class="text-gray-700 hover:text-maasai-red transition">About</a>
-                    <a href="programs.html" class="text-gray-700 hover:text-maasai-red transition">Programs</a>
-                    <a href="get-involved.html" class="text-maasai-red font-semibold">Get Involved</a>
-                    <a href="impact.html" class="text-gray-700 hover:text-maasai-red transition">Impact</a>
-                    <a href="contact.html" class="text-gray-700 hover:text-maasai-red transition">Contact</a>
-                </div>
-                <div class="md:hidden flex items-center">
-                    <button class="mobile-menu-button">
-                        <i class="fas fa-bars text-gray-700"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-        <!-- Mobile menu -->
-        <div class="mobile-menu hidden md:hidden">
-            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white">
-                <a href="index.html" class="block px-3 py-2 text-gray-700">Home</a>
-                <a href="about.html" class="block px-3 py-2 text-gray-700">About</a>
-                <a href="programs.html" class="block px-3 py-2 text-gray-700">Programs</a>
-                <a href="get-involved.html" class="block px-3 py-2 text-maasai-red font-semibold">Get Involved</a>
-                <a href="impact.html" class="block px-3 py-2 text-gray-700">Impact</a>
-                <a href="contact.html" class="block px-3 py-2 text-gray-700">Contact</a>
-            </div>
-        </div>
-    </nav>
+<?php
+$page_title = "Get Involved";
+include 'includes/header.php';
+?>
 
     <!-- Hero Section -->
     <section class="relative bg-gradient-to-r from-savanna-green to-green-700 text-white pt-16">
@@ -157,7 +99,7 @@
                             <li class="flex items-center"><i class="fas fa-check text-savanna-green mr-2"></i>Healthcare Support</li>
                             <li class="flex items-center"><i class="fas fa-check text-savanna-green mr-2"></i>Administrative Help</li>
                         </ul>
-                        <a href="contact.html" class="block w-full bg-savanna-green text-white text-center py-3 px-4 rounded-lg hover:bg-green-700 transition">Apply to Volunteer</a>
+                        <a href="contact.php" class="block w-full bg-savanna-green text-white text-center py-3 px-4 rounded-lg hover:bg-green-700 transition">Apply to Volunteer</a>
                     </div>
                 </div>
 
@@ -176,7 +118,7 @@
                             <li class="flex items-center"><i class="fas fa-check text-sunset-orange mr-2"></i>Technical Expertise</li>
                             <li class="flex items-center"><i class="fas fa-check text-sunset-orange mr-2"></i>Grant Opportunities</li>
                         </ul>
-                        <a href="contact.html" class="block w-full bg-sunset-orange text-white text-center py-3 px-4 rounded-lg hover:bg-orange-700 transition">Become a Partner</a>
+                        <a href="contact.php" class="block w-full bg-sunset-orange text-white text-center py-3 px-4 rounded-lg hover:bg-orange-700 transition">Become a Partner</a>
                     </div>
                 </div>
             </div>
@@ -229,58 +171,9 @@
             <p class="text-xl mb-8 max-w-2xl mx-auto">Every action, no matter how small, contributes to transforming lives and building sustainable communities.</p>
             <div class="space-x-4">
                 <button class="bg-white text-maasai-red hover:bg-gray-100 font-bold py-3 px-8 rounded-lg transition duration-300">Donate Now</button>
-                <a href="contact.html" class="bg-transparent border-2 border-white hover:bg-white hover:text-maasai-red text-white font-bold py-3 px-8 rounded-lg transition duration-300 inline-block">Contact Us</a>
+                <a href="contact.php" class="bg-transparent border-2 border-white hover:bg-white hover:text-maasai-red text-white font-bold py-3 px-8 rounded-lg transition duration-300 inline-block">Contact Us</a>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-12">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-                <div class="col-span-1 md:col-span-2">
-                    <h3 class="text-2xl font-bold mb-4">NALEPO</h3>
-                    <p class="text-gray-300 mb-4">Natural Livelihood Empowerment and Progress Organization - Empowering communities, transforming lives through sustainable development.</p>
-                    <div class="flex space-x-4">
-                        <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-                <div>
-                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
-                    <ul class="space-y-2">
-                        <li><a href="about.html" class="text-gray-300 hover:text-white">About Us</a></li>
-                        <li><a href="programs.html" class="text-gray-300 hover:text-white">Programs</a></li>
-                        <li><a href="impact.html" class="text-gray-300 hover:text-white">Impact</a></li>
-                        <li><a href="contact.html" class="text-gray-300 hover:text-white">Contact</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="text-lg font-semibold mb-4">Contact Info</h4>
-                    <div class="space-y-2 text-gray-300">
-                        <p><i class="fas fa-envelope mr-2"></i>nalepo.org@gmail.com</p>
-                        <p><i class="fas fa-phone mr-2"></i>+255 682 398 053</p>
-                        <p><i class="fas fa-globe mr-2"></i>nalepoorga.com</p>
-                        <p><i class="fas fa-user mr-2"></i>Emanuel Punuka, CEO</p>
-                    </div>
-                </div>
-            </div>
-            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
-                <p class="text-gray-300">&copy; 2024 NALEPO. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script>
-        // Mobile menu toggle
-        const mobileMenuButton = document.querySelector('.mobile-menu-button');
-        const mobileMenu = document.querySelector('.mobile-menu');
-        
-        mobileMenuButton.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-    </script>
-</body>
-</html>
+<?php include 'includes/footer.php'; ?>
